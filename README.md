@@ -30,8 +30,16 @@ Para padronizar as interfaces das implementações **ORM** foi criada uma especi
 
 
 4. Mapeamento - utilizar as **annotations** nas classes que serão mapeadas para uso so Hibernate.
-* @Entity: indica a aplicação que os objetos da classe especificada serão persistidos no banco de dados. @Entity quer dizer que a Classe Aluno tem uma representação no banco de dados (Tabela Aluno); 
+* @Entity: indica a aplicação que os objetos da classe especificada serão persistidos no banco de dados. @Entity quer dizer que a Classe Aluno tem uma representação dela no banco de dados (Tabela Aluno);
 
 ![Captura de Tela 2021-08-09 às 17 23 46](https://user-images.githubusercontent.com/990877/128769559-b4f44eaa-c891-4cc6-80a6-967d86a492b0.png)
 
-6. Configurar o **entityManager**
+Nas annotations de relacionamento, a propriedade "fetch" exige atenção especial. Seus possíveis valores são **eager**(ansioso) ou **lazy**(preguiçoso).
+* **Eager**: a entidade mapeada com esse atributo sempre será carregada na aplicação, mesmo que nunca seja usada durante a execução da aplicação.
+* **Lazy** a entidade mapeada com esse atributo somente será carregada na aplicação quando está for explicitamente consultada pela entidade que está mapeando.
+
+6. Configurar o **entityManager** (Manuseia as classes que foram mapeadas).
+* O EntityManager é utilizado para gerenciar o ciclo de vida das entidades. Principais métodos são (find, persist e remove).
+
+![Captura de Tela 2021-08-09 às 17 45 14](https://user-images.githubusercontent.com/990877/128772147-a5744b94-6b60-4ff0-87b1-e00d92347d19.png)
+

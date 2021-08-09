@@ -24,13 +24,10 @@ Para padronizar as interfaces das implementações **ORM** foi criada uma especi
 1. Realizar o download da Java Persistence API (JPA) utilizando o Maven ou Gradle.
 2. Baixar o Driver JDBC para o banco que será usado. A implementação que usará a JPA precisa do JDBC para realizar as conexões com o BD.
 3. Criar o arquivo **persistence.xml** e configurar os seguintes parâmetros:
-  * URL da string de conexão
-  * Driver
-  * endereço do BD
-  * Nome do BD
-  * Usuário do BD
-  * Senha do BD
-  * Driver e classes que serão utilizadas pelo JPA.
+  * Exemplo:
+
+![Captura de Tela 2021-08-09 às 17 13 39](https://user-images.githubusercontent.com/990877/128768354-061b326d-a78d-471d-a3fd-02ca1d839440.png)
+
 
 4. Utilizar as **annotations** nas classes que serão mapeadas para uso so Hibernate.
 5. Configurar o **entityManager**

@@ -39,7 +39,7 @@ Nas annotations de relacionamento, a propriedade "fetch" exige atenção especia
 * **Eager**: a entidade mapeada com esse atributo sempre será carregada na aplicação, mesmo que nunca seja usada durante a execução da aplicação.
 * **Lazy** a entidade mapeada com esse atributo somente será carregada na aplicação quando está for explicitamente consultada pela entidade que está mapeando.
 
-6. Configurar o **entityManager** (Manuseia as classes que foram mapeadas).
+6. Configurar o **entityManager** (Manipular as classes que foram mapeadas).
 * O EntityManager é utilizado para gerenciar o ciclo de vida das entidades. Principais métodos são (find, persist e remove).
 
 ![Captura de Tela 2021-08-09 às 17 45 14](https://user-images.githubusercontent.com/990877/128772147-a5744b94-6b60-4ff0-87b1-e00d92347d19.png)

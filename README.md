@@ -54,3 +54,16 @@ Pode utilizar os seguintes métodos:
 * **commit**: Finaliza uma transação, persistindo todos os dados que foram modificados desde o início da transação;
 * **rollback**: Finaliza uma transação, revertendo todos os dados que foram modificados desde o início da transação.
 
+# Implementação da JPA | Hibernate ⎔
+
+* Hibernate é uma ferramenta ORM Open Source e é a lider no mercado, foi a inspiração para a especificação da JPA.
+
+Para utilizar Hibernate para implementar JPA, basta seguir os seguintes passos:
+1. Realizar o download da API de implementação através so Maven ou Gradle.
+
+![Captura de Tela 2021-08-09 às 18 12 27](https://user-images.githubusercontent.com/990877/128775141-57f5521a-6422-4ba0-8e17-41dbaa0ff7eb.png)
+
+2. Modificar o arquivo **persistence.xml** configurando a tag **<provider>** indicando a classe da implementação que será utilizada.
+   
+![Captura de Tela 2021-08-09 às 18 17 36](https://user-images.githubusercontent.com/990877/128775765-ce894b80-4e5b-494f-9378-a840169e90e7.png)
+   

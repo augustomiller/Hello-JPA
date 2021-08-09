@@ -30,7 +30,7 @@ Para padronizar as interfaces das implementações **ORM** foi criada uma especi
 
 
 4. Mapeamento - utilizar as **annotations** nas classes que serão mapeadas para uso so Hibernate.
-* @Entity: indica a aplicação que os objetos da classe especificada serão persistidos no banco de dados.
+* @Entity: indica a aplicação que os objetos da classe especificada serão persistidos no banco de dados. @Entity quer dizer que a Classe Aluno tem uma representação no banco de dados (Tabela Aluno); 
 
 ![Captura de Tela 2021-08-09 às 17 23 46](https://user-images.githubusercontent.com/990877/128769559-b4f44eaa-c891-4cc6-80a6-967d86a492b0.png)
 

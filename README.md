@@ -67,3 +67,12 @@ Para utilizar Hibernate para implementar JPA, basta seguir os seguintes passos:
    
 ![Captura de Tela 2021-08-09 às 18 17 36](https://user-images.githubusercontent.com/990877/128775765-ce894b80-4e5b-494f-9378-a840169e90e7.png)
    
+# JPQL | Java Persistence Query Language
+* O SQL interage diretamente com o BD, o JPQL interage com as Entidades utilizando as propriedades da Orientação a Objetos.
+
+Porque usar o JPQL e não o entityManager?
+   
+* Operações de busca, atualização e remoção de entidades em "Massa", ao invés de realizar operações em apenas uma instância por vez através de chaves primárias.
+* Realizar consultas mais complexas;
+* Realizar funções de agragação;
+   

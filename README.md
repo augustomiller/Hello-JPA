@@ -29,5 +29,9 @@ Para padronizar as interfaces das implementações **ORM** foi criada uma especi
 ![Captura de Tela 2021-08-09 às 17 16 33](https://user-images.githubusercontent.com/990877/128768730-1d7fad6c-a768-416b-bb4e-b39d5ef268db.png)
 
 
-4. Utilizar as **annotations** nas classes que serão mapeadas para uso so Hibernate.
-5. Configurar o **entityManager**
+4. Mapeamento - utilizar as **annotations** nas classes que serão mapeadas para uso so Hibernate.
+* @Entity: indica a aplicação que os objetos da classe especificada serão persistidos no banco de dados.
+
+![Captura de Tela 2021-08-09 às 17 23 46](https://user-images.githubusercontent.com/990877/128769559-b4f44eaa-c891-4cc6-80a6-967d86a492b0.png)
+
+6. Configurar o **entityManager**

@@ -17,7 +17,8 @@ Registro  | Objeto
 Para padronizar as interfaces das implementações **ORM** foi criada uma especificação oficial chamada **JPA**(Java Persistence API). Ela descreve como deve ser o compotamento dos frameworks Java ORM que desejarem implementar sua especificação.
 
 * Observação: O JPA é uma interface única, "como se fosse uma tomada, onde você pode plugar vários aparelhos". O JPA é só isso, uma interface, ele não implementa nada, ele não realiza nenhuma função!
-* Se a sua aplicação tiver apenas o JPA ela não vai rodar, porque para persistir os dados com JPA é necessário escolher uma **implementação** que irá executar todo o trabalho.
+* Se a sua aplicação tiver apenas o JPA ela não vai rodar, porque para persistir os dados com JPA é necessário escolher uma **implementação** que irá executar todo o trabalho, por exemplo o 'Hibernate'.
+* O JPA "terceiriza" tudo ;)
 
 ## Como utilizar o JPA
 
@@ -42,4 +43,14 @@ Nas annotations de relacionamento, a propriedade "fetch" exige atenção especia
 * O EntityManager é utilizado para gerenciar o ciclo de vida das entidades. Principais métodos são (find, persist e remove).
 
 ![Captura de Tela 2021-08-09 às 17 45 14](https://user-images.githubusercontent.com/990877/128772147-a5744b94-6b60-4ff0-87b1-e00d92347d19.png)
+
+## Persistir os dados no banco de dados:
+
+Para persistir dados com as entidades mapeadas, é obrigatório iniciar uma transação. Para manipular transações é necessário utilizar o seguinte método do **entityManager**:
+* **getTransaction**: Retorna uma **EntityTransaction**, sendo obrigatório o seu uso quando utilizar algum método que realiza alterções no banco de dados.
+
+Pode utilizar os seguintes métodos:
+* **begin**: Inicia uma transação;
+* **commit**: Finaliza uma transação, persistindo todos os dados que foram modificados desde o início da transação;
+* **rollback**: Finaliza uma transação, revertendo todos os dados que foram modificados desde o início da transação.
 

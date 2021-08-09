@@ -26,7 +26,7 @@ Para padronizar as interfaces das implementações **ORM** foi criada uma especi
 3. Criar o arquivo **persistence.xml** e configurar os seguintes parâmetros:
   * Exemplo:
 
-![Captura de Tela 2021-08-09 às 17 13 39](https://user-images.githubusercontent.com/990877/128768354-061b326d-a78d-471d-a3fd-02ca1d839440.png)
+![Captura de Tela 2021-08-09 às 17 16 33](https://user-images.githubusercontent.com/990877/128768730-1d7fad6c-a768-416b-bb4e-b39d5ef268db.png)
 
 
 4. Utilizar as **annotations** nas classes que serão mapeadas para uso so Hibernate.

@@ -1,2 +1,2 @@
-# Hello-JPA
+# Hello JPA ☕️
 Entendendo o JPA.
